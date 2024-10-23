@@ -1,1 +1,0 @@
-here we conclude that javascript is a free languagge which uses interpreter for the compilation
