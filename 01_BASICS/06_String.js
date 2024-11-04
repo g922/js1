@@ -25,5 +25,9 @@ console.log(nameGame.toUpperCase); // ASSASSINS CREED
 //charAt
 //subString
 //indexof
-//
+//slice uses neg value [-8,4]
 //for more methods of string visit "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+//trim
+//replace
+//include
+//split 
