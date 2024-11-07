@@ -48,3 +48,37 @@ console.log(logginUserMessage("gourav"));
 //gourav just logged in
 
 console.log(logginUserMessage());
+
+
+function calculatecartPrice(...num1){
+    return num1
+}
+
+// if we passes various values then we rest operator
+// used as spread or rest used as same operator (...name)
+
+console.log(calculatecartPrice(200,100,600));
+//[ 200, 100, 600 ]
+
+// passing objects
+const user ={
+    username : "gourav",
+    price : 200
+}
+function handleObject(anyobject){
+console.log(`user name : ${anyobject.username} pricing : ${anyobject.price}`);
+
+}
+handleObject(user)
+//user name : gourav pricing : 200
+
+
+//passing array
+
+const newAraay = [200,400,500,600]
+
+function returnSecondArray(getarray) {
+    return getarray[1]
+}
+console.log(returnSecondArray(newAraay));
+//400
