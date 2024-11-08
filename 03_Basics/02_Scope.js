@@ -19,3 +19,52 @@ console.log(c);//30
 //there are two scope *global scope *block scope
 // values which is defined in global scope is accessable by block scope
 //but the values in block scope should not be accessable by global scope
+
+
+
+//closure and nested scope DOM(document object model)
+function one(){
+    const username = "gourav"
+    function two(){
+        const website = "ytube"
+        console.log(username);
+            }
+           // console.log(website); it will show error 
+            two()
+}
+one()  // gourav
+
+if (true) {
+    const username = "gourav"
+    if (username==="gourav") {
+        const website = "ytube"
+        console.log(username + website);
+        //gouravytube
+    }
+    
+}
+// console.log(username); it will show undefined error
+
+//+++++++++++++++             =============
+ console.log(addone(5));
+//6
+
+function addone(num) {
+    return num + 1
+    
+}
+
+
+
+// hoisting error as it return value in variable
+
+// addtwo(12)
+// ReferenceError: Cannot access 'addtwo' before initialization
+
+
+
+const addtwo = function(num){
+    return num + 2
+}
+console.log(addtwo(12));
+//14
