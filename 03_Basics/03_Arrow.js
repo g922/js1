@@ -72,4 +72,4 @@ console.log(addone())
 // { username: 'gourav' }
 
 console.log(typeof addone);
-
+// function

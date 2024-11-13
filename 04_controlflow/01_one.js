@@ -49,3 +49,14 @@ if (balance < 500) {
 }
 // greater than 700
 
+const userLoggin = true
+const debitcard = true 
+
+if (userLoggin && debitcard) {        // here we are using logical and statement that will check all condition to be true
+    console.log("allow to buy cource");
+    
+}
+if (userLoggin || debitcard) {
+    // either of the condition to be true
+}
+
