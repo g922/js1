@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+</head>
+<body>
+    <h1>CODE</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const gourav =function(){
+        console.log("GOURAv")
+    }
+
+    const changeText = function(){
+        document.querySelector("h1").innerHTML = "Code on JavaScript"
+    }
+
+    setTimeout(gourav,2000)
+    const changeMe = setTimeout(changeText,2000)// it will prints gourav at 2 sec it generally uses callback wues it does follow synchronous way of execution 
+    // for ref "https://youtu.be/zgt5oTD3rRc?si=i_vCS81R3qpf9tZg"
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("file stopped");
+        
+    })
+
+</script>
+</html>
