@@ -114,6 +114,11 @@ async function getallUsers() {
 // another way to handle fetch promises 
 //using .then function  .catch
 
+
+
+
+// fetch 
+
 fetch ('https://api.github.com/users/hiteshchoudhary')
 .then((response)=>{
   return response.json()
